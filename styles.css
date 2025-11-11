@@ -491,3 +491,24 @@ nav ul li a:hover {
   color: #f5d7a1 !important; /* bisa ganti jadi putih juga kalau mau */
   text-decoration: underline;
 }
+/* ==== FIX: tombol Read More tidak muncul ==== */
+section.project {
+  overflow: visible !important;
+  position: relative;
+  z-index: 1;
+}
+
+section.project .button {
+  display: inline-block !important;
+  position: relative;
+  z-index: 10;
+  margin-top: 30px;
+  color: #824c06 !important;
+  border: 1px solid #824c06 !important;
+  background-color: white !important;
+}
+
+section.project .button:hover {
+  background-color: #824c06 !important;
+  color: white !important;
+}
