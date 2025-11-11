@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>User Experience Design for Dashboard App</title>
+	<title>My Journey in Detail</title>
 	<link rel="stylesheet" href="bootstrap-grid.css" type="text/css">
 	<link rel="stylesheet" href="styles.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -194,9 +194,9 @@
 <body>
 	<nav>
 		<ul>
-			<li><a href="../index.html#contact">contact</a></li>
+			<li><a href="index.html#contact">contact</a></li>
 			<li>works</li>
-			<li>expertience</li>
+			<li>experience</li>
 			<li class="empty"></li>
 			<li>behance</li>
 			<li><a href="https://www.instagram.com/nadyazltaa?igsh=NnhzdWJmMm1mb3du" target="_blank">Instagram</a></li>
@@ -212,7 +212,7 @@
 		</div>
 
 		<div class="breadcrumb">
-			<a href="../index.html">Home</a> / User Experience Design for Dashboard App
+			<a href="index.html">Home</a> / My Journey in Detail
 		</div>
 
 		<section class="project">
@@ -258,13 +258,13 @@
 				
 				<div class="slider-container">
 					<div class="slider-slide">
-						<img src="bella1.jpeg" alt="Dashboard App Main Interface">
+						<img src="bella1.jpeg" alt="Look 1">
 					</div>
 					<div class="slider-slide">
-						<img src="bella2.jpeg" alt="Dashboard App Analytics View">
+						<img src="bella2.jpeg" alt="Look 2">
 					</div>
 					<div class="slider-slide">
-						<img src="bella3.jpeg" alt="Dashboard App Mobile View">
+						<img src="bella3.jpeg" alt="Look 3">
 					</div>
 				</div>
 
@@ -283,5 +283,18 @@
 		<h2>Interested in<br>learning more?<br>rhmanadya@gmail.com</h2>
 		<p>designed & developed by Nadia Rahma 2025</p>
 	</footer>
+
+	<!-- Auto Slide Script -->
+	<script>
+	const dots = document.querySelectorAll('.slider-dot');
+	const slides = document.querySelectorAll('.slider-toggle');
+	let current = 0;
+
+	setInterval(() => {
+	  slides[current].checked = false;
+	  current = (current + 1) % slides.length;
+	  slides[current].checked = true;
+	}, 4000);
+	</script>
 </body>
 </html>
